@@ -13,7 +13,10 @@ main(){
 	}
 	printf("\n");
 	for(int i=0;i<6;i++){
-		if((a[i]>0 && a[i+1]>0 && a[i+2]>0) || (a[i]<0 && a[i+1]<0 && a[i+2]<0)) cont ++;
+		if((a[i]>0 && a[i+1]>0 && a[i+2]>0) || (a[i]<0 && a[i+1]<0 && a[i+2]<0)){
+			cont ++;
+			i+=2;
+		}
 	}
 	
 	printf("%d",cont);
